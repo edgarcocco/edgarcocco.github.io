@@ -1,2 +1,11 @@
 
 edgarpage.exvim
+.exvim.edgarpage/_files_gawk
+.exvim.edgarpage/files.exproject
+.exvim.edgarpage/id-lang-autogen.map
+.exvim.edgarpage/update-filelist.bat
+.exvim.edgarpage/update-idutils.bat
+.exvim.edgarpage/update-inherits.bat
+.exvim.edgarpage/update-symbols.bat
+.exvim.edgarpage/update-tags.bat
+.exvim.edgarpage/view/~=+Documents=+GitHub=+edgarcocco.github.io=+edgarpage.exvim=
