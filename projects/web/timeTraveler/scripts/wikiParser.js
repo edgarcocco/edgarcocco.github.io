@@ -1,3 +1,10 @@
+//---------------------------------------------
+// wikiParser.js
+//
+// written by Edgar V. Cocco
+// can be used in your own project no credit needed :)
+//---------------------------------------------
+
 var monthsList = {
   1: "January",
   2: "February",
