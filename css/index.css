@@ -1,0 +1,53 @@
+html, body {
+ height: 100%;
+ 
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+p {
+ font-family: 'Source Sans Pro', sans-serif;
+ font-weight: 300;
+ font-size: 21px;
+}
+
+
+
+.main-div, .row {
+    height: 100%;
+    position: relative;
+    margin: 0px 50px;
+}
+
+.col-7 {
+  height:50%;
+}
+
+.center-div{
+  position: absolute;
+  top: 25%;
+  margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
+}
+
+.csharp-bar{ 
+  background-color: purple;
+}
+
+.xaml-bar {
+  background-color: #ADD8E6;
+}
+
+.js-bar {
+  background-color: yellow;
+  color:black;
+}
+.php-bar {
+  background-color: #99a0c6;
+}
+
+.otherapi-bar {
+}
