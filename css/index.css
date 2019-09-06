@@ -1,6 +1,19 @@
 html, body {
  height: 100%;
  cursor: grab;
+
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ /*
+ background: url('../images/3draintempo.png');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ */
+ overflow-x:hidden;
 }
 
 h1 {
@@ -28,7 +41,8 @@ p {
 }
 
 .center-div{
-  position: absolute;
+  position: relative;
+  left: 0px;
   top: 25%;
   margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
 }
