@@ -1,0 +1,85 @@
+.largepic{
+	/*position: relative;*/
+	/*display: inline-block;*/
+	width: 20rem;
+	height: 30rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: 10px solid black;
+}
+.largepic img{
+	width: 100%;
+	height: 100%;
+	/*max-width: 22rem;*/
+	/*object-fit: contain;*/
+}
+
+.largepic p {
+	margin: 0;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.addpicthumb {
+	width: 144px;
+	height: 144px;
+	background-image: url(../images/defaulthubprofilepic.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+.smallpic{
+	display: inline;
+}
+
+.smallpic img {
+	width: 144px;
+	height: 144px;
+	display: inline;
+	cursor:pointer;
+	border: 1px solid black;
+}
+
+label {
+	cursor: pointer;
+}
+
+.hubusername{
+	padding: 0px 0px 0px 0px;
+}
+
+.aboutmecards{
+	margin-left: 250px;
+}
+
+.uploadbtn{
+	background-color: #3498DB;
+	background-image: url(../images/uploadicon.png); 
+	background-repeat: no-repeat; 
+	background-position: center right;
+	padding: 0.5rem 4.8rem 0.5rem 1rem
+}
+
+.uploadbtn:hover{
+	background-color: #3498DB;
+}
+
+@media screen and (max-width: 1005px) 
+{
+	.fleximg {
+		flex-direction: column;
+	}
+}
+
+#biocard{
+	width: 39rem;
+}
+@media screen and (max-width: 992px) 
+{
+	#biocard{
+		width: 20rem;		
+	}
+}

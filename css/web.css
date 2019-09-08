@@ -1,0 +1,29 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Source Sans Pro', 'sans-serif';
+}
+
+h1, h2{
+  font-weight: 700;
+}
+
+
+.main-col{
+  /*height: 100%;*/
+}
+
+.stapp-title {
+  font-family: 'Russo One', 'Source Sans Pro', 'sans-serif';
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}

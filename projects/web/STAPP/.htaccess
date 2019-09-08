@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /
+
+##1)externally redirect "/file.php" to "/file"   
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+##2)Internally map "/file" back to "/file.php"
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ /$1.php [NC]
+
+#RewriteRule ^STAPP/hub/([A-Za-z0-9-]+)/?$ STAPP/hub/$1? [NC,R]
+RewriteRule ^hub/([A-Za-z0-9-]+)/?$ hub/index?usr=$1 [NC,L]
+
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+

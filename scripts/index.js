@@ -39,7 +39,6 @@ window.onload = function() {
         return;
       if(scrollTo < (columnsWidth * -1))
         return;
-
       scrollableDiv.style.left = (leftValue + scrollBy) + "px";
     }
 

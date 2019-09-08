@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteBase /
+
+# begin - remove extension
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ /$1.php [NC]
+
+# end - remove extension
+
+RewriteRule ^hub/([A-Za-z0-9-_]+)/?$ hub/index?usr=$1 [NC,L]
+
+#begin - http to https redirection
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+#end - http to https redirection
+
+
