@@ -3,7 +3,7 @@ html {
 }
 body {
   font-family: 'Source Sans Pro', 'sans-serif';
-}
+  }
 
 h1, h2{
   font-weight: 700;
@@ -14,7 +14,7 @@ h1, h2{
   /*height: 100%;*/
 }
 
-.stapp-title {
+.russo-font{
   font-family: 'Russo One', 'Source Sans Pro', 'sans-serif';
 }
 
@@ -27,3 +27,5 @@ a:active {
     text-decoration: inherit;
     font-weight: inherit;
 }
+
+
