@@ -13,23 +13,22 @@
 <body>
   <div class="main-div">
     <div class="row center-div flex-nowrap" id="scrollable-div">
-      <div class="col-7 aboutme-div border border-rounded">
-
-        <h1>About me</h1>
+      <div class="col-7 scrollable-column">
+        <h1 class="main-title">About me</h1>
         <div class="row">
-          <div class="col-5">
-            <img src="edoavatar.png" width="256" height="256">
+          <div class="col-sm-5 col-xs-3">
+            <img src="edoavatar.png" style="width: 100%; max-width:200px;" >
           </div>
-          <div class="col-6">
-            <h1 class="presentation"> Hello there my name is Edgar</h1>
-            <p class="d-inline">I'm a self-taught programmer, indie developer, who spend its free time creating video games
+          <div class="col-sm-7 col-xs-3">
+            <h1 class="presentation"> Hello my name is Edgar</h1>
+            <p class="">I'm a self-taught programmer & indie developer, who spend its free time creating video games
             or software!</p>
           </div>
         </div>
       </div>
 
-      <div class="col-7 border border-rounded">
-        <h1>Skills</h1>
+      <div class="col-7 scrollable-column">
+        <h1 class="main-title">Skills</h1>
 
         <div class="progress-bars">
           <p class="lead">C#</p>
@@ -71,8 +70,8 @@
         </div>
 
       </div>
-      <div class="col-7 border border-rounded">
-        <h1>Education</h1>
+      <div class="col-7 scrollable-column">
+        <h1 class="main-title">Education</h1>
         <h4>Head First C# (2nd Edition & 3rd Edition) book</h4>
         <hr />
         <p>This is the first head first book that i have read, started reading this book on <i>March of 2014</i> and still reading it!, 
@@ -85,16 +84,20 @@
         <p>This is one of the latest book that i've read started reading it on <i>March of 2019</i> learned HTML5 features, learned to code 
            JavaScript, JQuery, learned how AJAX works and integrate API's.</p>
       </div>
-      <div class="col-7 border border-rounded">
-        <h1>Projects</h1>
+      <div class="col-7 scrollable-column">
+        <h1 class="main-title">Projects</h1>
         <p>
-        <a href="projects/csharp/">C# Projects</a>
+          <a href="projects/csharp/">C# Projects</a>
         </p>
         <p>
-        <a href="projects/web/">Web Projects</a>
+          <a href="projects/web/">Web Projects</a>
         </p>
 
       </div>
+    </div>
+
+    <div class="drag-div">
+      <h1 class="main-title">Drag <img src="images/right-arrow.png" class="right-arrow"><img src="images/right-arrow.png" class="right-arrow"><img src="images/right-arrow.png" class="right-arrow"></h1>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
