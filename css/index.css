@@ -34,10 +34,10 @@ p {
  font-size: 30%;
 }
 
-.main-div, .row {
-    height: 100%;
-    position: relative;
-    margin: 0px 1rem;
+.main-div{
+  height: 100%;
+  position: relative;
+  margin: 0px 1rem;
 }
 
 .scrollable-column {
