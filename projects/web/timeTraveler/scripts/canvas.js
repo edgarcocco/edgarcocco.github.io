@@ -81,7 +81,6 @@ window.onload = function() {
   refreshFont();
   recoverLastDate();
   drawDate(canvas, context, font, month, day, year);
-  setInterval(function() {drawDate(canvas, context, font, month, day, year);}, 1000);
 };
 
 
@@ -92,7 +91,6 @@ function clearBackground(canvas, context, color) {
 
 function drawDate(canvas, context, font, month, day, year){
   clearBackground(canvas, context, "black");
-    console.log("hey");
   context.font = font_size + "px " + font;
   context.fillStyle = "white";
   // If you divide the current font_size by 4 the text
@@ -151,6 +149,7 @@ function saveDate() {
       "year": year
     };
     localStorage.setItem("dateSelected", JSON.stringify(dateSelected));
+
 }
 
 function recoverLastDate() {
