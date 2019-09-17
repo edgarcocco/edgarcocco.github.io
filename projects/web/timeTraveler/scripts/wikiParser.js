@@ -27,18 +27,7 @@ function getWiki(wikiObject) {
   var modalBody = document.getElementsByClassName("modal-body")[0];
   modalBody.innerHTML = article;
 
-  var tumblrButton = document.querySelector(".tumblr-share-button");
-  if(tumblrButton == null)
-    tumblrButton = document.createElement("a");
-
-  tumblrButton.setAttribute("class", "tumblr-share-button");
-  tumblrButton.setAttribute("data-caption", monthsList[month] + " " + day + ", " +
-                                            year + article);
-  tumblrButton.setAttribute("data-color", "blue");
-  tumblrButton.setAttribute("data-notes", "none");
-  tumblrButton.setAttribute("href", "https://embed.tumblr.com/share");
-  tumblrButton.innerHTML = '<img src="images/tumblr_share.png" width="80" height="40"></img><script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>';
-
+ 
   article = article.replace(" ", "%20");  
 
   var twitterButton = document.querySelector(".twitter-share-button");
@@ -51,6 +40,18 @@ function getWiki(wikiObject) {
                                       year + article + "%20&button_hashtag=timeTravel");
   twitterButton.setAttribute("data-size", "large");
   twitterButton.innerHTML = '<img src="images/twitter_share.png" width="80" height="40" ></img>';
+
+  var tumblrButton = document.querySelector(".tumblr-share-button");
+  if(tumblrButton == null)
+    tumblrButton = document.createElement("a");
+
+  tumblrButton.setAttribute("class", "tumblr-share-button");
+  tumblrButton.setAttribute("href", "https://www.tumblr.com/widgets/share/tool?caption="+
+                            monthsList[month] + " " + day + ", " + year + article +
+                            "&tags=timeTraveler&canonicalUrl=https://edgarcocco.github.io");
+  tumblrButton.setAttribute("target", "_blank");
+  tumblrButton.innerHTML = '<img src="images/tumblr_share.png" width="80" height="40"></img>';
+
 
   var modalFooter = document.querySelector(".modal-footer");
   modalFooter.prepend(twitterButton);
