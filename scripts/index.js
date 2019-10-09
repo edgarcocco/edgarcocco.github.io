@@ -43,18 +43,18 @@ window.onload = function() {
       var scrollableDiv = document.querySelector("#scrollable-div");
       var leftValue = parseInt(scrollableDiv.style.left.split('p')[0]);
       var scrollTo = leftValue + scrollBy;
-      if(Object.is(leftValue, NaN))
-        leftValue = -1;
 
+      if(Object.is(scrollTo, NaN))
+        scrollTo = -1;
       if(scrollTo > 0)
-        return;
+        scrollTo = 0;
       if(scrollTo < (columnsWidth * -1))
-        return;
-      scrollableDiv.style.left = (leftValue + scrollBy) + "px";
+        scrollTo = columnsWidth * -1;
+
+      scrollableDiv.style.left = (scrollTo) + "px";
       showDragAnimation=false;
       scrollPosition = (Math.abs(leftValue) / columnsWidth) * 100;
     }
-
     lastMousePosition = currentMousePosition;
   }
 
@@ -76,9 +76,10 @@ function prepareColumns() {
 
 function update(){
   if(showDragAnimation)
+
     arrowAnimation();
   if(!showDragAnimation && dragDiv.style.opacity == "") 
-    dragDiv.style.opacity = 0;
+    dragDiv.remove();
 
   divFadeIn();
 }
@@ -92,7 +93,7 @@ function divFadeIn() {
       var opacity = parseFloat(columns[i].style.opacity);
       if(Object.is(opacity, NaN))
         opacity = increaseBy;
-      columns[i].style.opacity =  opacity + increaseBy;
+      columns[i].style.opacity =  Math.min(opacity + increaseBy, 1);
     }
   }
 }

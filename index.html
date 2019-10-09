@@ -15,75 +15,119 @@
 <body>
   <div class="main-div ">
     <div class="row center-div flex-nowrap" id="scrollable-div">
-      <div class="col-xs-5 col-lg-7 scrollable-column">
+      <div class="col-xs-5 col-md-12 col-lg-6 scrollable-column rounded-left p-5" id="about-me">
         <h1 class="main-title">About me</h1>
         <div class="row">
-          <div class="col-sm-4 col-xs-3">
+          <div class="col-sm-5 col-xs-3">
             <img src="edoavatar.png" style="width: 100%; max-width:200px;" >
           </div>
           <div class="col-sm-7 col-xs-3">
-            <h1 class="presentation"> Hello my name is Edgar</h1>
+            <h1 class="presentation"> Hello, my name is Edgar</h1>
             <p class="">I'm a self-taught programmer & indie developer, who spend its free time creating video games
             or software!</p>
             <p>
-               <i class="fas fa-map-marker-alt"></i> St. Petersburg, Florida
+            <i class="fas fa-map-marker-alt"></i> <span class="mr-2">St. Petersburg, Florida</span>
                <i class="fas fa-mobile"></i> +1 813-270-2317
             </p>
-            <p><a href="https://github.com/edgarcocco">Visit my GitHub</a></p>
+            <h5><a id="github-link" href="https://github.com/edgarcocco"><img width="24" height="24" src="images/GitHub-Mark-32px.png" class="mr-1">Visit my GitHub</a></h5>
           </div>
         </div>
       </div>
 
-      <div class="col-xs-5 col-lg-7 scrollable-column ">
+      <div class="col-xs-5 col-md-12 col-lg-7 scrollable-column p-5" id="skills">
         <h1 class="main-title">Skills</h1>
 
         <div class="progress-bars">
-          <p class="lead">C#</p>
-          <div class="progress">
-            <div class="progress-bar csharp-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:80%">
-              80%
-            </div>
-          </div>
-          <p class="lead">XAML </p>
-          <div class="progress">
-            <div class="progress-bar xaml-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:70%">
-              70%
-            </div>
-          </div>
-          <p class="lead">PHP</p>
-          <div class="progress">
-            <div class="progress-bar php-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:60%">
-              60%
-            </div>
-          </div>
-          <p class="lead">JavaScript</p>
-          <div class="progress">
-            <div class="progress-bar js-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:60%">
-              60%
-            </div>
-          </div>
-          <p class="lead">JQuery, AJAX</p>
+          <div class="row">
+            <div class="col">
+              <p class="lead">C# </p>
+              <div class="progress">
+                <div class="progress-bar csharp-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                </div>
+              </div>
+              <p class="lead">PHP</p>
+              <div class="progress">
+                <div class="progress-bar php-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
 
-          <div class="progress">
-            <div class="progress-bar otherapi-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:60%">
-              60%
+              <p class="lead">Python</p>
+              <div class="progress">
+                <div class="progress-bar python-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                </div>
+              </div>
+              
+              <p class="lead">JavaScript</p>
+              <div class="progress">
+                <div class="progress-bar js-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+
+              <p class="lead">HTML5/CSS3</p>
+              <div class="progress">
+                <div class="progress-bar html-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col">
+              <p class="lead">JQuery</p>
+              <div class="progress">
+                <div class="progress-bar jquery-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                </div>
+              </div>
+              <p class="lead">XAML </p>
+              <div class="progress">
+                <div class="progress-bar xaml-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                </div>
+              </div>
+              <p class="lead">MonoGame</p>
+              <div class="progress">
+                <div class="progress-bar monogame-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+              <p class="lead">Bootstrap</p>
+              <div class="progress">
+                <div class="progress-bar bootstrap-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+              <p class="lead">AJAX</p>
+
+              <div class="progress">
+                <div class="progress-bar ajax-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
       </div>
-      <div class="col-xl-5 col-lg-7 scrollable-column">
+      <div class="col-xs-5 col-md-12 col-lg-7 scrollable-column  p-5" id="education">
         <h1 class="main-title">Education</h1>
-        <h4><b>University of Michigan on Coursera</b>, Web Applications For Everybody Specialization, 2019</h4>
+        <div class="row">
+          <div class="col">
+          <p class="lead"><b>University of Michigan on Coursera</b></p>
+          </div>
+          <div class="col">
+            <p>Web Applications For Everybody Specialization, 2019</p>
+            </div>
+        </div>
         <hr />
                 
       </div>
-      <div class="col-7 scrollable-column">
+      <div class="col-xs-5 col-md-12 col-lg-7 scrollable-column rounded-right p-5" id="projects">
         <h1 class="main-title">Projects</h1>
         <p>
           <a href="projects/csharp/">C# Projects</a>

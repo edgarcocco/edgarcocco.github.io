@@ -19,6 +19,12 @@ html, body {
  overflow-y: hidden;
 }
 
+body {
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
 .row{
 }
 
@@ -30,18 +36,54 @@ h1 {
 
 p {
  font-family: 'Source Sans Pro', sans-serif;
- font-weight: 300;
+ font-weight: 400;
  font-size: 30%;
 }
 
+a {
+  color: cornflowerblue;
+  font-size: 18px;
+}
+
+#github-link {
+  color: black;
+}
+
+
 .main-div{
-  height: 100%;
   position: relative;
-  margin: 0px 1rem;
+  height: 100%;
+  margin: 0px 5em;
+
 }
 
 .scrollable-column {
-  font-size: 60px;
+  font-size: 50px;
+  padding: 0px 30px;
+  /*background: url('../images/BlurredBackgrounds-Montse/blurred-bg-2.png') no-repeat ;*/
+  -webkit-box-shadow: 15px 7px 11px 5px #aaa;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    15px 7px 11px 5px #aaa;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         15px 7px 11px 5px #aaa;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  background-blend-mode: multiply;
+}
+
+#about-me {
+
+ background-image: linear-gradient( 90deg, cornflowerblue 10%, #5961F9 100%);
+}
+
+#skills {
+  background-color: #5961F9;
+ /*background-image: linear-gradient( 135deg, #5961F9 100%, #123597 100%);*/
+}
+
+#education {
+  /*background-image: linear-gradient( 135deg,  #4040D4 10%, #72EDF2 100%);*/
+  background-color: #5961F9;
+}
+
+#projects {
+  background-image: linear-gradient( 90deg, #5961F9 10%, #EE9AE5 100%);
 }
 
 .center-div{
@@ -55,16 +97,45 @@ p {
   background-color: purple;
 }
 
-.xaml-bar {
-  background-color: #ADD8E6;
+.php-bar {
+  background-color: #8890b5;
 }
 
-.js-bar {
+.python-bar {
   background-color: yellow;
-  color:black;
+} 
+
+.js-bar {
+  background-color: orange;
 }
-.php-bar {
-  background-color: #99a0c6;
+
+.html-bar {
+  background-color: #E44D26;
+}
+
+.jquery-bar {
+  background-color: LightBlue;
+}
+
+.xaml-bar {
+  background-color: #174276;
+}
+
+.monogame-bar {
+  background-color: #e73c00;
+}
+
+.bootstrap-bar {
+  background-color: purple;
+}
+
+.ajax-bar {
+  background-color: blue;
+}
+
+.progress {
+  height: 2%;
+  background-color: darkgray;
 }
 
 .otherapi-bar {
@@ -75,14 +146,18 @@ p {
   display: block;
   width: 3.5rem;
   height: 0.05rem;
-  background-color: rgba(0, 0, 0, 0.20);
+  background-color: rgba(255, 255,255, 0.20);
 }
 
 .drag-div {
-  position: absolute;
-  margin-left: 60px;
-  bottom: 20%;
-  font-size: 60px;
+  position:absolute;
+  margin-left: 0px;
+  bottom: 0%;
+  z-index: 999;
+}
+
+.drag-div h1 {
+  font-size: 3vw;
 }
 
 .scrollable-column:nth-child(1n+2) { 
@@ -125,5 +200,8 @@ p {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+}
+
+@media (max-height: 650px) {
   
 }
